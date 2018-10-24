@@ -18,12 +18,23 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from h815 device
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Inherit from ls997 device
 $(call inherit-product, device/lge/ls997/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := ls997
-PRODUCT_NAME := full_ls997
+PRODUCT_NAME := lineage_ls997
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-LS997
 PRODUCT_MANUFACTURER := LGE
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE="elsa" \
+    PRODUCT_DEVICE="elsa" \
+    PRODUCT_NAME="elsa_spr_us" \
+    PRIVATE_BUILD_DESC="elsa_spr_us-user 7.0 NRD90M 1626515087a95 release-keys"
+
+BUILD_FINGERPRINT := "lge/elsa_spr_us/elsa:7.0/NRD90M/1626515087a95:user/release-keys"
