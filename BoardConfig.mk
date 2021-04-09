@@ -25,4 +25,4 @@ TARGET_OTA_ASSERT_DEVICE := ls997,us996,elsa
 TARGET_KERNEL_CONFIG := lineageos_ls997_defconfig
 
 # inherit from the proprietary version
--include vendor/lge/ls997/BoardConfigVendor.mk
+include vendor/lge/ls997/BoardConfigVendor.mk
