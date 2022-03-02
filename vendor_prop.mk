@@ -9,3 +9,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.home.operator.alpha=Sprint \
     ro.telephony.default_cdma_sub=1 \
     telephony.lteOnCdmaDevice=1
+
+# USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.usb.product_string=LG V20
