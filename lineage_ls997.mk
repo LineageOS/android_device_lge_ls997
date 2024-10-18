@@ -32,9 +32,7 @@ PRODUCT_MODEL := LG-LS997
 PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="elsa" \
-    PRODUCT_DEVICE="elsa" \
-    PRODUCT_NAME="elsa_spr_us" \
-    PRIVATE_BUILD_DESC="elsa_spr_us-user 8.0.0 OPR1.170623.032 1819814314eb7 release-keys"
-
-BUILD_FINGERPRINT := "lge/elsa_spr_us/elsa:8.0.0/OPR1.170623.032/1819814314eb7:user/release-keys"
+    BuildDesc="elsa_spr_us-user 8.0.0 OPR1.170623.032 1819814314eb7 release-keys" \
+    BuildFingerprint="lge/elsa_spr_us/elsa:8.0.0/OPR1.170623.032/1819814314eb7:user/release-keys" \
+    DeviceName="elsa_spr_us" \
+    DeviceProduct="elsa"
